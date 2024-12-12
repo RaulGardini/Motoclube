@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Motoclube</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  Motoclube 12345678
+  <div id="principal">
+    <div id="txtprincipal">
+      <img src="img/Captura de tela 2024-11-18 181820.png" alt="">
+      <h1 style="font-size: 5em;">The</h1>
+      <h1 style="margin-bottom: -3px;">Open</h1>
+      <h1 style="font-size: 5em;">Road</h1>
+    </div>
+    <p id="Ferramentas">Ferramentas administrativas</p>
+    <div id="secundaria">
+      <h4>Bem-vindo(a) de volta!</h4>
+      <p>insira sua senha e clique em "Entrar" para continuar.</p>
+      <form id="loginForm">
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit; margin-left: 130px; color: rgb(3, 175, 3); font-size: 1.5em;">Usuario:</font>
+            </font>
+          </label>
+          <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+            style="margin-left: 130px; width: 380px; background-color: rgb(3, 175, 3); color: white; border-radius: 0;">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;  margin-left: 130px; color: rgb(3, 175, 3); font-size: 1.5em;">Senha:</font>
+            </font>
+          </label>
+          <input type="password" class="form-control" id="exampleInputPassword1"
+            style="margin-left: 130px; width: 380px;  background-color: rgb(3, 175, 3); color: white; border-radius: 0;">
+        </div>
+        <div style="margin-left: 130px;">
+          <button type="button" class="btn btn-primary" style="border-radius: 0; background-color: rgb(3, 175, 3); width: 250px;"
+            onclick="verificarCredenciais(event)">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Entrar</font>
+            </font>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

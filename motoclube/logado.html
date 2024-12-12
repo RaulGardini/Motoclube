@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motoclube</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+    <header>
+        <div style="margin-bottom: -12px;">
+            <div id="txtprincipal">
+                <img src="img/Captura de tela 2024-11-18 181820.png" alt="">
+                <h1>The</h1>
+                <h1 style="font-size: 2.5em; margin-top: 28px;">Open</h1>
+                <h1>Road</h1>
+            </div>
+            <p id="Ferramentas">Ferramentas administrativas</p>
+        </div>
+        <div id="conectado">
+            <p style="color: rgb(3, 175, 3); margin-right: 15px; font-size: 1.3em;">Conectado como: </p>
+            <p style="font-size: 1.3em;">Motoclube</p>
+        </div>
+    </header>
+    <main>
+        <div id="navegação">
+            <img src="img/photo-1470290032981-3371c20736f6.jpg" alt="" style="height: 150px;">
+            <button id="reabastecerBtn" type="button" class="btn btn-success" style="border: none;">Reabastecer</button>
+            <button id="melhoriasBtn" type="button" class="btn btn-success" style="border: none;">Comprar melhorias</button>
+            <button id="suspenderBtn" type="button" class="btn btn-success" style="border: none;">Suspender o Esquema</button>
+        </div>
+        <div id="sobre">
+            <div id="status_ativo">
+                <p
+                    style="margin-top: 1.5%; margin-right: 1.5%; margin-bottom: 1.5%; margin-left: 4%; color: rgb(3, 175, 3); font-size: 1.8em;">
+                    STATUS:</p>
+                <p style="margin-top: 1.5%; font-size: 1.8em;">ATIVO</p>
+            </div>
+            <div id="estoque">
+                <p>Estoque</p>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 70%; border-radius: 0; margin-top: 15px;  margin-left: 108px;">
+                    <div class="progress-bar" style="width: 25%; background-color: rgb(3, 175, 3); width: 5%;"></div>
+                </div>
+            </div>
+            <div id="suprimentos">
+                <p>Suprimentos</p>
+                <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="25" aria-valuemin="0"
+                    aria-valuemax="100" style="width: 70%; border-radius: 0; margin-top: 15px;  margin-left: 60px;">
+                    <div class="progress-bar" style="width: 25%; background-color: rgb(3, 175, 3); width: 95%;"></div>
+                </div>
+            </div>
+            <div id="rendimento">
+                <div id="preço">
+                    <p style="color: rgb(3, 175, 3); font-size: 2.5em; margin-top: 10px;">Rendimento total</p>
+                    <h1 style="margin-top: -30px;">$365,500</h1>
+                </div>
+                <div id="vendas">
+                    <p style="color: rgb(3, 175, 3); font-size: 2.5em; margin-top: 10px;">Vendas totais</p>
+                    <h1 style="margin-top: -30px;">1</h1>
+                </div>
+            </div>
+            <div id="informaçoes">
+                <div id="nomes">
+                    <p>Reabastecimentos bem-sucedidos</p>
+                    <p>Vendas bem-sucedidas em Los Santos</p>
+                    <p>Vendas bem-sucedidas em Blaine County</p>
+                    <p>Produção encerrada (cuprimentos)</p>
+                    <p>Produção encerrada (cnvasão)</p>
+                    <p>Produção encerrada (capacidade)</p>
+                </div>
+                <div id="numeros">100%</p>
+                    <p>0%</p>
+                    <p>50%</p>
+                    <p>0</p>
+                    <p>0</p>
+                    <p>2</p>
+                </div>
+            </div>
+            <button style="width: 100%; border: none; padding: 0; background: none; outline: none;">
+                <div id="vender_estoque">
+                    <h1 style="margin-left: 20px;">Vender estoque</h1>
+                </div>
+            </button>
+        </div>
+    </main>
+    <div id="popup" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 255, 0, 0.5);
+    justify-content: center;
+    align-items: center;">
+        <div style="background-color: white;padding: 20px;text-align: center;width: 300px; width: 38%; height: 35%;">
+            <div style="display: flex; height: 50px; justify-content: center;">
+                <div>
+                    <img src="img/Captura de tela 2024-11-18 181820.png" alt="" style="width: 65%;">
+                </div>
+                <div style="color: rgb(3, 175, 3); font-size: 2.5em; margin-top: -1%; margin-left: 8px;"><p>The</p></div>
+                <div style="color: rgb(3, 175, 3); font-size: 2em; margin-top: 1%; margin-left: 5px;"><p>Open</p></div>
+                <div style="color: rgb(3, 175, 3); font-size: 2.5em; margin-top: -1%; margin-left: 5px;"><p>Road</p></div>
+            </div>
+            <p style="font-size: 1.7em; margin-top: 7%;">Todo o produto será perdido.Tem certeza<br> de que deseja encerrar?</p>
+            <button id="btnFecharPopup" style="padding: 10px 20px;background-color: rgb(3, 175, 3);color: white;border: none;cursor: pointer;font-size: 16px; margin-top: 50px; margin-right: 15px;">
+                Fechar
+            </button>
+            <button style="padding: 10px 20px;background-color: rgb(3, 175, 3);color: white;border: none;cursor: pointer;font-size: 16px; margin-top: 70px; margin-left: 15px;">
+                Confirmar
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="scriptPopap.js"></script>
+    
+</body>
+
+</html>
