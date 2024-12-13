@@ -15,13 +15,10 @@ function verificarCredenciais(event) {
   }
 }
 
-// Selecionando os botões e a div de sobre
 const reabastecerBtn = document.getElementById("reabastecerBtn");
 const melhoriasBtn = document.getElementById("melhoriasBtn");
-//const suspenderBtn = document.getElementById("suspenderBtn");
 const sobreDiv = document.getElementById("sobre");
 
-// Função para alterar o conteúdo e o estilo da div#sobre
 function alterarSobre(acao) {
     if (acao === 'reabastecer') {
         sobreDiv.innerHTML = `
@@ -122,7 +119,6 @@ function alterarSobre(acao) {
     }
 }
 
-// Adicionando os manipuladores de evento para os botões
 reabastecerBtn.addEventListener('click', function() {
     alterarSobre('reabastecer');
 });
@@ -130,7 +126,3 @@ reabastecerBtn.addEventListener('click', function() {
 melhoriasBtn.addEventListener('click', function() {
     alterarSobre('melhorias');
 });
-
-//suspenderBtn.addEventListener('click', function() {
-    //alterarSobre('suspender');
-//});
