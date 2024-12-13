@@ -1,18 +1,13 @@
-// script.js
-
-// Obter elementos do HTML
 const btnMostrarPopup = document.getElementById('suspenderBtn');
 const btnFecharPopup = document.getElementById('btnFecharPopup');
 const popup = document.getElementById('popup');
 
-// Mostrar o popup
 btnMostrarPopup.addEventListener('click', function() {
-    popup.style.display = 'flex'; // Exibe o popup
+    popup.style.display = 'flex';
 });
 
-// Fechar o popup
 btnFecharPopup.addEventListener('click', function() {
-    popup.style.display = 'none'; // Esconde o popup
+    popup.style.display = 'none';
 });
 
 document.querySelector('.popup h2').innerText = 'Novo Título';
